@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.jfx-hamburger-icon StackPane{
+    -fx-background-color : #ffffff;
+    
+}
+.jfx-hamburger-icon{
+    -fx-cursor: hand;
+    
+}

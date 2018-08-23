@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainScreen" prefHeight="668.0" prefWidth="1266.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.msi.omfx.ui.controller.HomeController">
+    <stylesheets>
+        <URL value="@../styles/home.css" />
+    </stylesheets>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="491.0" layoutY="96.0" prefHeight="75.0" prefWidth="1266.0" style="-fx-background-color: #333645;" text="Current Tab" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Ebrima" size="18.0" />
+         </font>
+      </Label>
+      <VBox fx:id="sideBar" layoutX="-300.0" prefHeight="668.0" prefWidth="300.0" style="-fx-background-color: #333645;">
+         <children>
+            <Label prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00a2d4;" text="Admin Panel" textFill="WHITE">
+               <font>
+                  <Font name="Ebrima" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <JFXButton prefHeight="50.0" prefWidth="300.0" ripplerFill="BLACK" textFill="#7c8184">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="85.0" prefHeight="50.0" prefWidth="300.0" ripplerFill="BLACK" textFill="#7c8184">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="135.0" prefHeight="50.0" prefWidth="300.0" ripplerFill="BLACK" textFill="#7c8184">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="10.0" layoutY="185.0" prefHeight="50.0" prefWidth="300.0" ripplerFill="BLACK" textFill="#7c8184">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <JFXHamburger fx:id="menuButton" layoutX="15.0" layoutY="25.0" styleClass="jfx-hamburger-icon" />
+   </children>
+</AnchorPane>
