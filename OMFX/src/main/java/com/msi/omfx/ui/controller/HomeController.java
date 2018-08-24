@@ -6,10 +6,12 @@
 package com.msi.omfx.ui.controller;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXDatePicker;
 import com.jfoenix.controls.JFXHamburger;
 import com.jfoenix.transitions.hamburger.HamburgerBackArrowBasicTransition;
 import com.jfoenix.transitions.hamburger.HamburgerBasicCloseTransition;
 import java.net.URL;
+import java.util.Locale;
 import java.util.ResourceBundle;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -18,6 +20,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
 import javafx.util.Duration;
@@ -35,19 +38,19 @@ public class HomeController implements Initializable {
     @FXML
     private VBox sideBar;
     @FXML
+    private HBox filtersBar;
+    @FXML
     private AnchorPane mainScreen;
     @FXML
     private JFXHamburger menuButton;
     private boolean menuPressed = false;
-    JFXButton button1 = new JFXButton("button 1");
-    JFXButton button2 = new JFXButton("button 2");
-    JFXButton button3 = new JFXButton("button 3");
+    JFXDatePicker datePicker = new JFXDatePicker();
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         initMenuButton();
-        initSideBar();
+        initFiltersBar();
     }
 
     public void initMenuButton() {
@@ -61,28 +64,9 @@ public class HomeController implements Initializable {
 
     }
 
-    public void initSideBar() {
-        button1.setPrefSize(300, 75);
-        button1.setButtonType(JFXButton.ButtonType.FLAT);
-        button1.setRipplerFill(Paint.valueOf("#000000"));
-        button1.setTextFill(Paint.valueOf("#7c8184"));
-        button1.getStyleClass().add("sideMenuButton");
-
-        button2.setPrefSize(300, 75);
-        button2.setButtonType(JFXButton.ButtonType.FLAT);
-        button2.setRipplerFill(Paint.valueOf("#000000"));
-        button2.setTextFill(Paint.valueOf("#7c8184"));
-        button2.getStyleClass().add("sideMenuButton");
-
-        button3.setPrefSize(300, 75);
-        button3.setButtonType(JFXButton.ButtonType.FLAT);
-        button3.setRipplerFill(Paint.valueOf("#000000"));
-        button3.setTextFill(Paint.valueOf("#7c8184"));
-        button3.getStyleClass().add("sideMenuButton");
-
-        sideBar.getChildren().add(button1);
-        sideBar.getChildren().add(button2);
-        sideBar.getChildren().add(button3);
+    public void initFiltersBar() {
+        Locale.setDefault(Locale.forLanguageTag("ar"));
+        filtersBar.getChildren().add(1, datePicker);
     }
 
     public void toggleSideMenu() {

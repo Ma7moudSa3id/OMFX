@@ -30,11 +30,41 @@
                   <Insets left="10.0" />
                </padding>
             </Label>
+            <JFXButton maxWidth="300.0" prefHeight="75.0" styleClass="sideMenuButton" text="Button 1" textFill="#7c8184" />
+            <JFXButton layoutX="10.0" layoutY="85.0" maxWidth="300.0" prefHeight="75.0" styleClass="sideMenuButton" text="Button 2" textFill="#7c8184" />
+            <JFXButton layoutX="10.0" layoutY="160.0" maxWidth="300.0" prefHeight="75.0" styleClass="sideMenuButton" text="Button 3" textFill="#7c8184" />
          </children>
       </VBox>
       <JFXHamburger fx:id="menuButton" layoutX="15.0" layoutY="25.0" styleClass="jfx-hamburger-icon" />
-      <Button layoutX="1073.0" layoutY="567.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="newOperationButton" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0" />
-      <ChoiceBox layoutX="307.0" layoutY="155.0" prefWidth="150.0" />
-      <ComboBox layoutX="584.0" layoutY="220.0" prefWidth="150.0" />
+      <Button layoutX="1073.0" layoutY="567.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="newOperationButton" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <HBox fx:id="filtersBar" alignment="CENTER" layoutX="746.0" layoutY="323.0" prefHeight="50.0" prefWidth="1266.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <JFXButton style="-fx-background-color: #2ac9aa;" text="Apply" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label text="Date" textFill="#2ac9aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <JFXComboBox focusColor="#2ac9aa" promptText="All" />
+            <Label layoutX="184.0" layoutY="10.0" text="Supplier" textFill="#2ac9aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <JFXComboBox focusColor="#2ac9aa" promptText="All" />
+            <Label layoutX="362.0" layoutY="10.0" text="Type" textFill="#2ac9aa">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>
