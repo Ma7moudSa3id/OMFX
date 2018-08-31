@@ -22,7 +22,7 @@
       </Label>
       <VBox fx:id="sideBar" layoutX="-300.0" prefHeight="668.0" prefWidth="300.0" style="-fx-background-color: #333645;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #00a2d4;" text="Admin Panel" textFill="WHITE">
+            <Label prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #2ac9aa;" text="Admin Panel" textFill="WHITE">
                <font>
                   <Font name="Ebrima" size="18.0" />
                </font>
@@ -36,7 +36,7 @@
          </children>
       </VBox>
       <JFXHamburger fx:id="menuButton" layoutX="15.0" layoutY="25.0" styleClass="jfx-hamburger-icon" />
-      <Button layoutX="1073.0" layoutY="567.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="newOperationButton" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+      <Button layoutX="1073.0" layoutY="567.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="newOperationButton" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="25.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
